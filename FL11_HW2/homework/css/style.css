@@ -1,8 +1,8 @@
 @-webkit-keyframes rotation {
     from {-webkit-transform: rotatey(0deg);}
     to   {-webkit-transform: rotatey(360deg);}
-}
-
+    }
+@media screen {
     .tm-box-bg-title:hover {
         background: #87cefa;
         color: #ffffff;
@@ -25,8 +25,8 @@
         text-align: center;
         height: 25vh;
         background: #ffffff;
-        letter-spacing: 5%;
-        word-spacing: 5%;
+        letter-spacing: 5px;
+        word-spacing: 5px;
     }
 
     .tm-banner-text{
@@ -165,16 +165,9 @@
         line-height: 1.8;
     }
 
-    .tm-banner-text {
-        letter-spacing: 4px;
-        word-spacing: 1.5em;
-        transform: rotateY(1turn);        
-        transition: 1s;
-        text-shadow: 0px 10px 2px #76cdd7bd,
-                     0px 4px 2px #76cdd7d9;
-    }
-
 }
+    
+
 
 @media print {
     .tm-team-description-container {
@@ -273,6 +266,6 @@
     }
 
     .tm-footer {
-        font-size: 10px;
+        font-size: 11px;
     }
 }
