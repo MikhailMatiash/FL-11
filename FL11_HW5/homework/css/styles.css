@@ -1,0 +1,424 @@
+/* :root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #162b4d;
+  --link: #fff;
+  --link--hover: #b8b8b8;
+  --bg-footer-color: #162b4d; } */
+
+body {
+  font-family: roboto; }
+
+.post-1 {
+  background: #B71757; }
+
+.post-2 {
+  background: #0D7E71; }
+
+.post-3 {
+  background: #b1660e; }
+
+.post-4 {
+  background: #d12767; }
+
+.post-5 {
+  background: #2d95bb; }
+
+body {
+  background: #0b192f;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10%;
+  margin-left: 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; }
+
+header {
+  width: 100%;
+  max-height: 165px;
+  background: #162b4d;
+  display: flex; }
+  header .logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: lighter; }
+    header .logo a {
+      color: #ffffff;
+      text-decoration: none;
+      padding-left: 4%;
+      font-size: 32px; }
+      header .logo a span {
+        color: #B71757; }
+  header .navigation {
+    height: 100%;
+    width: 50%; }
+    header .navigation nav {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      header .navigation nav a {
+        color: #ffffff;
+        text-decoration: none;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 4%;
+        padding-left: 4%;
+        box-sizing: border-box; }
+        header .navigation nav a:hover {
+          background: rgba(184, 184, 184, 0.1);
+          max-height: 165px; }
+  header .navigationtablet {
+    display: none; }
+
+.prezentation {
+  margin-top: 3%;
+  display: flex;
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap; }
+  .prezentation .post-1,
+  .prezentation .post-2,
+  .prezentation .post-3,
+  .prezentation .post-4 {
+    width: 100%; }
+    .prezentation .post-1 .prezentationfoto,
+    .prezentation .post-2 .prezentationfoto,
+    .prezentation .post-3 .prezentationfoto,
+    .prezentation .post-4 .prezentationfoto {
+      width: 50%; }
+      .prezentation .post-1 .prezentationfoto img,
+      .prezentation .post-2 .prezentationfoto img,
+      .prezentation .post-3 .prezentationfoto img,
+      .prezentation .post-4 .prezentationfoto img {
+        width: 100%;
+        height: 100%; }
+        .prezentation .post-1 .prezentationfoto img:hover,
+        .prezentation .post-2 .prezentationfoto img:hover,
+        .prezentation .post-3 .prezentationfoto img:hover,
+        .prezentation .post-4 .prezentationfoto img:hover {
+          background: inherit;
+          width: 100%;
+          height: 100%;
+          opacity: 0.5; }
+    .prezentation .post-1 .post,
+    .prezentation .post-2 .post,
+    .prezentation .post-3 .post,
+    .prezentation .post-4 .post {
+      position: relative;
+      background: inherit;
+      width: 50%;
+      flex-direction: column;
+      z-index: 0; }
+      .prezentation .post-1 .post:hover::after,
+      .prezentation .post-2 .post:hover::after,
+      .prezentation .post-3 .post:hover::after,
+      .prezentation .post-4 .post:hover::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: inherit;
+        opacity: 0.6;
+        cursor: pointer; }
+      .prezentation .post-1 .post h1,
+      .prezentation .post-2 .post h1,
+      .prezentation .post-3 .post h1,
+      .prezentation .post-4 .post h1 {
+        color: #ffffff;
+        font-size: 30px;;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 7%;
+        padding-left: 7%;
+        font-weight: lighter;
+        width: 50%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        margin-right: 0;
+        margin-left: 0;
+        height: 40%; }
+      .prezentation .post-1 .post p,
+      .prezentation .post-2 .post p,
+      .prezentation .post-3 .post p,
+      .prezentation .post-4 .post p {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 7%;
+        padding-left: 7%;
+        color: rgba(255, 254, 254, 0.5);
+        width: 60%;
+        font-size: 10px;
+        height: 45%;
+        margin: 0; }
+      .prezentation .post-1 .post div,
+      .prezentation .post-2 .post div,
+      .prezentation .post-3 .post div,
+      .prezentation .post-4 .post div {
+        color: rgba(255, 254, 254, 0.5);
+        font-size: 20px;
+        width: 16%;
+        height: 20%;
+        font-weight: lighter; }
+        .prezentation .post-1 .post div span,
+        .prezentation .post-2 .post div span,
+        .prezentation .post-3 .post div span,
+        .prezentation .post-4 .post div span {
+          font-size: 10px; }
+
+.flexwrap {
+  display: flex; }
+  .flexwrap .post {
+    display: flex;
+    flex-wrap: wrap; }
+    .flexwrap .post div {
+      padding-top: 4%; }
+
+.flexwrap:nth-child(2n+2) {
+  display: flex;
+  flex-direction: row-reverse; }
+  .flexwrap:nth-child(2n+2) .post {
+    flex-direction: column;
+    flex-wrap: wrap-reverse; }
+    .flexwrap:nth-child(2n+2) .post h1 {
+      text-align: right; }
+    .flexwrap:nth-child(2n+2) .post p {
+      text-align: right; }
+    .flexwrap:nth-child(2n+2) .post div {
+      padding-top: 4%;
+      font-size: 20px;
+      width: 16%;
+      height: 20%;
+      font-weight: lighter; }
+      .flexwrap:nth-child(2n+2) .post div span {
+        font-size: 10px; }
+
+.post-5 {
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto; }
+  .post-5:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: inherit;
+    opacity: 0.6;
+    cursor: pointer; }
+  .post-5 h1 {
+    color: #ffffff;
+    font-size: 3vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 7%;
+    padding-left: 7%;
+    font-weight: lighter;
+    width: 65%;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 7%;
+    margin-left: 7%;
+    height: 40%; }
+  .post-5 p {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 7%;
+    padding-left: 7%;
+    color: rgba(255, 254, 254, 0.6);
+    width: 75%;
+    font-size: 10px;
+    margin: 0;
+    height: 40%; }
+  .post-5 div {
+    color: rgba(255, 254, 254, 0.5);
+    font-size: 3vw;
+    width: 11%;
+    height: 20%;
+    font-weight: lighter; }
+    .post-5 div span {
+      font-size: 2vw; }
+
+.prezentationnews {
+  width: 30%;
+  margin-left: 2%;
+  height: 100%; }
+  .prezentationnews .sectionnews {
+    background: #ffffff;
+    margin-top: 8%;
+    height: 100%; }
+    .prezentationnews .sectionnews .fotonews img {
+      width: 100%; }
+    .prezentationnews .sectionnews .textnews {
+      margin: 10%; }
+      .prezentationnews .section_news .textnews h3 {
+        font-size: 10px;
+        font-weight: 300;
+        margin-bottom: 0; }
+      .prezentationnews .sectionnews .textnews p {
+        color: #b8b8b8;
+        font-size: 1px; }
+
+footer {
+  background: #162b4d;
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%; }
+  footer p {
+    color: #415679; }
+  footer .signature {
+    width: 10%; }
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 2%;
+    margin-left: 2%; }
+
+  header {
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center; }
+    header .logo {
+      margin-top: 9%;
+      margin-bottom: 9%;
+      margin-right: 0;
+      margin-left: 0;
+      justify-content: center;
+      width: 100%; }
+      header .logo a {
+        padding: 0; }
+    header .navigationtablet {
+      display: block;
+      color: #fff;
+      padding-top: 1%; }
+    header .navigation {
+      display: none; }
+
+  .prezentation {
+    width: 60%; }
+    .prezentation .post-1,
+    .prezentation .post-2,
+    .prezentation .post-3,
+    .prezentation .post-4 {
+      flex-direction: column; }
+      .prezentation .post-1 .prezentationfoto,
+      .prezentation .post-2 .prezentationfoto,
+      .prezentation .post-3 .prezentationfoto,
+      .prezentation .post-4 .prezentationfoto {
+        width: 100%; }
+      .prezentation .post-1 .post,
+      .prezentation .post-2 .post,
+      .prezentation .post-3 .post,
+      .prezentation .post-4 .post {
+        width: 100%;
+        height: auto;
+        align-items: center; }
+        .prezentation .post-1 .post h1,
+        .prezentation .post-2 .post h1,
+        .prezentation .post-3 .post h1,
+        .prezentation .post-4 .post h1 {
+          width: 100%;
+          box-sizing: border-box;
+          margin-top: 2%;
+          height: auto;
+          font-size: 6vw; }
+        .prezentation .post-1 .post p,
+        .prezentation .post-2 .post p,
+        .prezentation .post-3 .post p,
+        .prezentation .post-4 .post p {
+          width: 100%;
+          box-sizing: border-box;
+          height: auto;
+          font-size: 3vw; }
+        .prezentation .post-1 .post div,
+        .prezentation .post-2 .post div,
+        .prezentation .post-3 .post div,
+        .prezentation .post-4 .post div {
+          font-size: 7vw;
+          text-align: center;
+          padding-bottom: 5%; }
+          .prezentation .post-1 .post div span,
+          .prezentation .post-2 .post div span,
+          .prezentation .post-3 .post div span,
+          .prezentation .post-4 .post div span {
+            font-size: 4vw; }
+    .prezentation .post-5 {
+      width: 100%;
+      height: min-content;
+      flex-direction: row;
+      justify-content: center; }
+      .prezentation .post-5 h1 {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 2%;
+        height: auto;
+        font-size: 6vw; }
+      .prezentation .post-5 p {
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        font-size: 3vw; }
+      .prezentation .post-5 div {
+        font-size: 7vw;
+        text-align: center;
+        padding-bottom: 5%; }
+        .prezentation .post-5 div span {
+          font-size: 4vw; }
+    .prezentation .flexwrap:nth-child(2n+2) {
+      flex-direction: column; }
+      .prezentation .flexwrap:nth-child(2n+2) .post {
+        align-items: center; }
+        .prezentation .flexwrap:nth-child(2n+2) .post h1 {
+          text-align: left; }
+        .prezentation .flexwrap:nth-child(2n+2) .post p {
+          text-align: left; }
+        .prezentation .flexwrap:nth-child(2n+2) .post div {
+          font-size: 7vw; }
+          .prezentation .flexwrap:nth-child(2n+2) .post div span {
+            font-size: 4vw; }
+
+  .prezentationnews {
+    width: 38%; }
+    .prezentationnews .sectionnews .textnews h3 {
+      font-size: 18px; }
+    .prezentationnews .sectionnews .textnews p {
+      font-size: 10px; }
+
+  footer {
+    flex-direction: column; }
+    footer .textfooter {
+      text-align: center; }
+    footer .signature {
+      width: 40%;
+      text-align: center; } }
+@media screen and (max-width: 480px) {
+  .prezentation {
+    width: 100%; }
+    .prezentation .flexwrap .post h1 {
+      font-size: 10vw; }
+    .prezentation .flexwrap .post div {
+      font-size: 8vw; }
+      .prezentation .flexwrap .post div span {
+        font-size: 5vw; }
+
+  .prezentationnews {
+    width: 100%;
+    margin-left: 0; }
+    .prezentationnews .sectionnews {
+      margin-top: 0;
+      margin-bottom: 4%; }
+
+  footer {
+margin-top: 5%; } }
