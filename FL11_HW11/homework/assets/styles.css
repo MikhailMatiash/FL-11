@@ -1,0 +1,105 @@
+body {
+    margin: 5%;
+}
+div {
+    box-sizing: border-box;
+}
+hr {
+    height: 5px;
+    background: rgba(52, 187, 250, 0.2);
+    border: none;
+    margin: 20px 0;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.titlehead {
+    text-align: center;
+    color: rgb(52, 187, 250);
+}
+.messagebar {
+    text-align: center;
+    color: rgb(0, 100, 0);
+    display: none;
+}
+.inputflex {
+    display: flex;
+    justify-content: space-between;
+}
+.inputaction {
+    width: 88%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(211, 211, 211);
+    padding-left: 3%;
+}
+.addaction {
+    margin-right: 2%;
+}
+.addbutton {
+    font-size: 55px;
+    color:rgb(211, 211, 211);
+    cursor: pointer;
+}
+.materialicons {
+    font-size: 100%;
+}
+
+.task {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    margin: 10px 0;
+}
+.checkbox {
+    border: 2px solid rgb(211, 211, 211);
+    height: 25px;
+    width: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.tasktitle {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+}
+.doneicon {
+    color:rgb(126, 126, 126);
+    background: rgba(211, 211, 211, 0.2);
+    font-size: 134%;
+}
+.editinput {
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    font-size: 9px;
+    padding-left: 10px;
+    width: 30%;
+    height: 25px;
+}
+.disable {
+    margin-left: 10px;
+    color: rgb(52, 187, 250);
+    font-size: 16px;
+    cursor: pointer;
+    /* border: none; */
+    /* width: auto; */
+}
+.saveicon,
+.editicon,
+.deleteicon {
+    color: rgb(52, 187, 250);
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.deleteicon {
+    margin-right: 15px;
+}
+.nonevisible    {
+    display: none;
+}
